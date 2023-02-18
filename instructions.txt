@@ -1,0 +1,9 @@
+Instructions:
+
+1) Only execute index.php file (used to avoid displaying errors on the screen since no variables were passed yet)
+
+2) Afterwards, tax.php will follow and you can now continuously use the calculator :)
+
+PS. Use a scale of 125% with 1920 x 1080 display resolution
+
+Happy calculating!
