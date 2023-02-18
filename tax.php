@@ -4,19 +4,21 @@
     <meta charset="UTF-8"> 
     <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
     <link rel = "stylesheet" href = "style.css">
-    <title>Lab1</title>     
+    <title>Tax Calculator</title>     
 </head> 
 <body>
     <div class = "form-container">
-    <form method="POST">
+     <form method="POST">
         <h1>Taxxy: A Tax Calculator</h1>
-        <b>Salary: </b><input type="number" name="salary" id="salary" required/> 
+        <b>Salary: </b>
+        <input type="number" name="salary" id="salary" required/> 
         <br><br><b>Type:</b>
-        <input type="radio" name="type" id="type_bimonthly" value="bimonthly" />
+        <input type="radio" name="type" id="type_bimonthly" value="bimonthly" required />
         <label for="type_bimonthly">Bi-Monthly</label>
         <input type="radio" name="type" id="type_monthly" value="monthly" />
         <label for="type_monthly">Monthly</label>
-        <p><input type="submit" name="compute" value="Compute" /></p>
+        <br>
+        <button name="compute" type="submit">Compute</button>
     </form>
     <?php
         if(isset($_POST['compute'])){
@@ -60,11 +62,12 @@
             $monthly_tax = $annual_tax / 12;
         }
     ?>
-    <div class = "result-container">
+    <div class="result">
     <p>Salary: PHP <?php echo number_format($salary, 2); ?></p>
     <p>Annual Salary: PHP <?php echo number_format($annual_salary, 2); ?></p>
     <p>Est. Annual Tax: PHP <?php echo number_format($annual_tax, 2); ?></p>
     <p>Est. Monthly Tax: PHP <?php echo number_format($monthly_tax, 2); ?></p>
+    </div>
     </div>
     </div>
     </body>
