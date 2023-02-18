@@ -1,5 +1,5 @@
 .form-container {
-    background-color: white;
+    background-color: #011f4b;
     border: 2px solid grey;
     border-radius: 15px;
     height: auto;
@@ -7,17 +7,25 @@
     box-shadow: 5px 6px 15px #888888;
     width: 30%;
     position: fixed;
+    margin: 25px;
+    margin-left: 550px;
+    width: 400px;
+    height: 600px;
+    color: white;
+    }
 
+.form-container h1 {
+    text-align: center;
 }
 
 .form-container p {
-    width: 100%;
+    width: 90%;
     letter-spacing: 3px;
     border-radius: 8px;
-    font-size: 18px;
+    font-size: 15px;
     padding: 1rem;
-    background-color: #98FB98;
-    color: black;
+    background-color: #03396c;
+    color: white;
     cursor: pointer;
     text-decoration: none;
     border: none;
@@ -27,7 +35,7 @@
 
 /* change color when cursor is in the button */
 .form-container p:hover {
-    background-color: #00A86B;
+    background-color: #6497b1;
 }
 
 .form-container input[type="submit"] {
@@ -37,11 +45,40 @@
 }
 
 input[type="number"] {
-    width: 100%;
+    width: 50%;
     letter-spacing: 3px;
     border-radius: 8px;
-    margin-bottom: 1rem;
     margin-top: 1rem;
     padding: 12px 20px;
-    background-color: rgb(229, 175, 202);
+    background-color:   #b3cde0;
   }
+
+.form-container button {
+    background-color: #005b96;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    margin-left: 130px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.form-container button:hover {
+    background-color: #00A86B;
+}
+
+.result {
+    background-color: white;
+    border: 2px solid grey;
+    border-radius: 15px;
+    height: auto;
+    padding: 2rem;
+    width: 83%;
+
+}
