@@ -23,7 +23,7 @@ class Student {
         return $this->gender;
     }
     public function displayInfo(){
-        echo "Name: " . $this->name . "<br>" . "Age: " .  $this->age . "<br>";
+        echo "Name: " . $this->name . "<br>" . "Age: " .  $this->age . "<br>" . "Gender: " .  $this->gender . "<br>";
     }
 }
 
@@ -41,7 +41,7 @@ class Year extends Student {
     }    
 
     public function displayInfo(){
-        echo $this->getName() . " is a student" . "<br>";
+        echo $this->getName() . " is a student and is a " . $this->getGender() . "." . "<br>";
     }
 
     public function printInfo() {
@@ -74,12 +74,14 @@ class School extends Year {
 
 $student = new Student();
 $student->setName("Sachi");
+$student->setGender("Female");
 $student->setAge(20);
 $student->displayInfo();
 echo "<br>";
 
 $student2 = new Year("1ITA");
 $student2->setName("Scarlet");
+$student2->setGender("Female");
 $student2->displayInfo();
 $student2->printInfo();
 $student2->printInfo2("Ms. Tan");
@@ -87,6 +89,7 @@ echo "<br>";
 
 $student3 = new Year("2ITF");
 $student3->setName("Slay");
+$student3->setGender("Male");
 $student3->displayInfo();
 $student3->printInfo();
 $student3->printInfo2("Ms. Velasquez");
